@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NSBLPA — Home</title>
+  <meta name="description" content="NSBLPA — National Sales & Business League Players Association - prototype" />
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="NSBLPA home">
+        <img src="assets/logo-placeholder.svg" alt="NSBLPA logo" class="logo">
+        <span class="brand-text">NSBLPA</span>
+      </a>
+
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="mainNav" class="main-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ownership.html">Ownership</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>National Sales & Business League Players Association</h1>
+          <p class="lead">A community of competitive teams, owners and apps — built for growth, performance and fans.</p>
+          <p class="hero-cta">
+            <a class="btn" href="teams.html">Explore Teams</a>
+            <a class="btn outline" href="apps.html">View Apps</a>
+          </p>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <!-- decorative geometric SVG -->
+          <svg width="320" height="200" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" class="hero-graphic" role="img" aria-hidden="true">
+            <rect width="320" height="200" rx="12" fill="url(#g)"/>
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#0f172a"/>
+                <stop offset="1" stop-color="#0b84ff"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-links">
+      <div class="container">
+        <h2>Quick links</h2>
+        <div class="grid grid-2">
+          <a class="card" href="teams.html" aria-label="Teams">
+            <h3>Teams</h3>
+            <p>See all 7 teams, owner pages and team sites.</p>
+          </a>
+          <a class="card" href="apps.html" aria-label="Apps">
+            <h3>Apps</h3>
+            <p>Official team & fan Android apps, league and player apps.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <h2>About NSBLPA</h2>
+        <p>NSBLPA is a league-styled organization for high-performing sales teams and their ownership groups. This is a prototype redesign focused on fast performance, accessibility and mobile-first responsiveness.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div>
+        <p><strong>NSBLPA</strong> &middot; Prototype — Horizon Sphere Equity Group</p>
+        <p><a href="contact.html">Contact</a> · <a href="ownership.html">Ownership</a></p>
+      </div>
+      <small>&copy; <span id="year"></span> NSBLPA — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="assets/scripts.js" defer></script>
+</body>
+</html>

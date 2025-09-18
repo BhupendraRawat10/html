@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ownership — NSBLPA</title>
+  <meta name="description" content="Ownership — modeled after SalesBets ownership page (prototype).">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="NSBLPA home">
+        <img src="assets/logo-placeholder.svg" alt="NSBLPA logo" class="logo">
+        <span class="brand-text">NSBLPA</span>
+      </a>
+      <button id="navToggle2" class="nav-toggle" aria-expanded="false" aria-controls="mainNav2" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="mainNav2" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ownership.html" aria-current="page">Ownership</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Ownership</li>
+      </ol>
+    </nav>
+
+    <section class="ownership-hero">
+      <h1>Ownership & League Network</h1>
+      <p class="lead">Profiles and network tools for owners, partners and advertisers.</p>
+    </section>
+
+    <section class="ownership-cards">
+      <div class="grid grid-1 grid-responsive-2">
+        <!-- Card: Ownership profile -->
+        <article class="owner-card" aria-labelledby="owner1">
+          <header>
+            <h2 id="owner1">FVN Network</h2>
+            <p class="muted">League partner & network</p>
+          </header>
+          <p>FVN provides live sports distribution and platform services to NSBLPA and owners.</p>
+          <p class="card-actions">
+            <a class="btn small" href="https://play.google.com/store/apps/details?id=com.fvn.network" target="_blank" rel="noopener">FVN Network App</a>
+            <a class="btn outline small" href="https://play.google.com/store/apps/details?id=com.fvn.livesports" target="_blank" rel="noopener">Live Sports</a>
+          </p>
+        </article>
+
+        <article class="owner-card" aria-labelledby="owner2">
+          <header>
+            <h2 id="owner2">SalesBet (Platform)</h2>
+            <p class="muted">Platform & Influencer tools</p>
+          </header>
+          <p>SalesBet handles team apps, influencers and advertiser tools.</p>
+          <p class="card-actions">
+            <a class="btn small" href="https://play.google.com/store/apps/details?id=com.salesbet.influencers" target="_blank" rel="noopener">SalesBet Influencers</a>
+            <a class="btn outline small" href="https://play.google.com/store/apps/details?id=com.salesbet.advertisers" target="_blank" rel="noopener">Advertisers</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="ownership-note">
+      <h3>Design notes</h3>
+      <p>This page is intentionally simple — modeled for clarity, quick access to apps and owner tools. Cards are semantic articles for screen readers and keyboard access.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div>
+        <p><strong>NSBLPA</strong> — Ownership</p>
+      </div>
+      <small>&copy; <span id="year2"></span> NSBLPA</small>
+    </div>
+  </footer>
+
+  <script src="assets/scripts.js" defer></script>
+</body>
+</html>

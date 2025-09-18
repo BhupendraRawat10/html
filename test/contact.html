@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — NSBLPA</title>
+  <meta name="description" content="Contact NSBLPA">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="NSBLPA home">
+        <img src="assets/logo-placeholder.svg" alt="NSBLPA logo" class="logo">
+        <span class="brand-text">NSBLPA</span>
+      </a>
+      <nav class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ownership.html">Ownership</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact</h1>
+    <p class="lead">Questions, partnership or press — send us a message.</p>
+
+    <section class="contact-grid">
+      <form id="contactForm" class="contact-form" novalidate>
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" required aria-required="true" />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required aria-required="true" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+
+        <button class="btn" type="submit">Send message</button>
+        <p id="formMsg" class="muted" aria-live="polite"></p>
+      </form>
+
+      <aside class="contact-info" aria-labelledby="contactHeading">
+        <h2 id="contactHeading">Contact info</h2>
+        <p>Email: <a href="mailto:hello@nsblpa.com">hello@nsblpa.com</a></p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>Address: 123 Market St, New York, NY</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <small>&copy; <span id="year5"></span> NSBLPA</small>
+    </div>
+  </footer>
+
+  <script src="assets/scripts.js" defer></script>
+</body>
+</html>
