@@ -24,7 +24,7 @@ export const chatController = {
     }
 
     const chat = await chatService.createOrGetDirectChat(userAId, userBId);
-    console.log("chat", chat);
+    // console.log("chat", chat);
     res.status(200).json({ chatId: chat.id });
   },
 
@@ -38,7 +38,7 @@ export const chatController = {
     }
 
     const chat = await chatService.createGroupChat(name, createdBy, memberIds);
-    console.log("chat", chat);
+    // console.log("chat", chat);
 
     res.status(200).json({ chatId: chat.id, name: chat.name, type: chat.type });
   },
@@ -54,7 +54,7 @@ export const chatController = {
     }
 
     await chatService.addMemberToGroup(chatId, userId);
-    console.log("chatService", chatService);
+    // console.log("chatService", chatService);
 
     res.status(200).json({ success: true });
   },
@@ -67,7 +67,7 @@ export const chatController = {
     }
 
     await chatService.removeMemberFromGroup(chatId, userId);
-    console.log("chatService", chatService);
+    // console.log("chatService", chatService);
 
     res.status(200).json({ success: true });
   },
@@ -79,7 +79,7 @@ export const chatController = {
     }
 
     const chats = await chatService.getChatsForUser(userId);
-    console.log("chats", chats);
+    // console.log("chats", chats);
 
     res.status(200).json({
       chats: chats.map((chat) => ({
